@@ -1,0 +1,20 @@
+{
+    "name": "video-call-nodejs",
+    "version": "1.0.0",
+    "description": "my first video call app",
+    "main": "backend/index.js",
+    "scripts": {
+        "start": "node backend/index.js",
+        "backend": "nodemon backend/index.js",
+        "frontend": "cd frontend && npm run dev",
+        "dev": "concurrently \"npm run frontend\" \"npm run backend\""
+    },
+    "keywords": ["video", "call", "app"],
+    "author": "Bhuwneshwar mandal",
+    "license": "ISC",
+    "dependencies": {
+        "body-parser": "^1.20.2",
+        "express": "^4.18.2",
+        "socket.io": "^4.7.2"
+    }
+}
